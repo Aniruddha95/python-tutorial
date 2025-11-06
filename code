@@ -70,3 +70,69 @@ print(f"Your username is {username}")
 print(f"The year is {year}")
 print(f"The value of pi is {pi}")
 print(f"Are you an admin? : {isAdmin}")
+
+// Typecasting
+
+# Typecasting = The process of converting a variable from one data type to another
+# str(), int(), float(), bool()
+
+name = "Aniruddha"
+age = 30
+gpa = 3.2
+isStudent = True
+
+print(type(name))
+
+gpa = int(gpa)
+print(gpa)
+print(type(gpa))
+
+isStudent = int(isStudent)
+print(isStudent)
+
+age = float(age)
+print(age)
+
+age = str(age)
+print(age)
+print(type(age))
+
+name = bool(name)
+print(name)
+
+// User Input
+
+# input() = A function that prompts the user to enter data
+# Returns the entered data as a string
+
+name = input("What is your name? : ")
+age = int(input("How old are you? : "))
+
+age = age + 1
+
+print(f"Hello {name}")
+print("Happy Birthday")
+print(f"You are {age} years old")
+
+print(type(age))
+
+# Homework
+# Exercise 1 : Calculate the area of a rectangle
+
+length = float(input("Enter the length : "))
+width = float(input("Enter the width : "))
+area = length * width
+
+print(f"The area of rectangle is : {area}")
+
+# Exercise 2 : Shopping cart program
+
+item = input("What item would you like to buy? : ")
+price = float(input("What is the price? : "))
+quantity = int(input("How many would you like? : "))
+total = price * quantity
+
+print(f"You have bought {quantity} x {item}/s")
+print(f"Your total is : ${total}")
+
+// Mad Libs Game
