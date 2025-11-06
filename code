@@ -1,5 +1,72 @@
-# Introduction
+// Introduction
 
 # This is my first python program : This is a comment
 print("I like pizza!")
 print("It's really good!")
+
+// Variables
+
+# Variable = A container for a value (string, integer, float, boolean)
+# A variable behaves as if it was the value that it contains
+
+# Strings
+firstName = "Harry"
+food = "pizza"
+email = "harry@fake.com"
+
+print(firstName)
+print(f"Hello {firstName}")
+print(f"You like {food}")
+print(f"Your email is : {email}")
+
+# Integers
+age = 30
+quantity = 3
+numOfStudents = 67
+
+print(f"You are {age} years old")
+print(f"You are buying {quantity} items")
+print(f"Your class has {numOfStudents} students")
+
+# Floats
+price = 10.99
+gpa = 3.2
+distance = 5.5
+
+print(f"The price is ${price}")
+print(f"Your gpa is : {gpa}")
+print(f"You ran {distance}km")
+
+# Boolean
+isStudent = False
+forSale = True
+isOnline = False
+
+print(f"Are you a student? : {isStudent}")
+
+if isStudent:
+    print("You are a student")
+else:
+    print("You are not a student")
+
+if forSale:
+    print("That item is for sale")
+else:
+    print("That item is not available")
+
+if isOnline:
+    print("You are online")
+else:
+    print("You are offline")
+
+# Homework
+
+username = "BroCode"
+year = 2025
+pi = 3.14
+isAdmin = True
+
+print(f"Your username is {username}")
+print(f"The year is {year}")
+print(f"The value of pi is {pi}")
+print(f"Are you an admin? : {isAdmin}")
