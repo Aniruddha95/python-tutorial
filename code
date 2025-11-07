@@ -294,4 +294,21 @@ elif operator == "/":
 else:
     print(f"{operator} is not a valid operator")
 
+// Weight Convertor Program
 
+print("Weight Convertor Program")
+print("1. Convert lbs to kgs")
+print("2. Convert kgs to lbs")
+
+option = int(input("Choose an option : "))
+
+if option == 1:
+    weight = float(input("Enter weight in lbs : "))
+    weight = weight * 0.453592
+    print(f"The new weight is {round(weight, 1)}kgs")
+elif option == 2:
+    weight = float(input("Enter weight in kgs : "))
+    weight = weight * 2.20462
+    print(f"The new weight is {round(weight, 1)}lbs")
+else:
+    print("Enter valid option")
