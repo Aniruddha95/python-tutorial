@@ -312,3 +312,21 @@ elif option == 2:
     print(f"The new weight is {round(weight, 1)}lbs")
 else:
     print("Enter valid option")
+
+// Temperature Convertor Program
+
+print("Temperature Convertor Program")
+unit = input("Is this temperature in Celsius or Fahrenheit? (C/F) : ")
+
+if unit == "C":
+    temp = float(input("Enter the temperature : "))
+    temp = (9 * temp) / 5 + 32
+    print(f"The temperature in fahrenheit is {round(temp, 1)}")
+elif unit == "F":
+    temp = float(input("Enter the temperature : "))
+    temp = (temp - 32) * 5 / 9
+    print(f"The temperature in celsius is {round(temp, 1)}")
+else:
+    print(f"{unit} is an invalid unit of measurement")
+
+
