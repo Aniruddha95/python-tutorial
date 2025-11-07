@@ -329,4 +329,42 @@ elif unit == "F":
 else:
     print(f"{unit} is an invalid unit of measurement")
 
+// Logical Operators
+
+# OR
+temp = int(input("Enter temperature outside : "))
+isRaining = input("Is it raining outside? (True/False) : ").strip() == "True"
+
+if temp > 35 or temp < 0 or isRaining:
+    print("The outdoor event is cancelled")
+else:
+    print("The outdoor event is still scheduled")
+
+# AND
+temp = 25
+isSunny = True
+
+if temp >= 28 and isSunny:
+    print("It is hot outside")
+    print("It is sunny")
+elif temp <= 0 and isSunny:
+    print("It is cold outside")
+    print("It is sunny")
+elif 28 > temp > 0 and isSunny:
+    print("It is warm outside")
+    print("It is sunny")
+
+# NOT
+temp = 25
+isSunny = False
+
+if temp >= 28 and not isSunny:
+    print("It is hot outside")
+    print("It is cloudy")
+elif temp <= 0 and not isSunny:
+    print("It is cold outside")
+    print("It is cloudy")
+elif 28 > temp > 0 and not isSunny:
+    print("It is warm outside")
+    print("It is cloudy")
 
