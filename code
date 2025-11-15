@@ -252,9 +252,10 @@ else:
 response = input("Would you like some food? (y/n) : ")
 
 if response == "y":
-    print("What will you have?")
+    choice = input("What will you have? : ")
+    print(f"Okay, I will make {choice} for you")
 elif response == "n":
-    print("Can I get you something else?")
+    print("Fine")
 else:
     print("Enter valid response")
 
