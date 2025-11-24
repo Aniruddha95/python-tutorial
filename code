@@ -453,3 +453,62 @@ elif not username.isalpha():
 else:
     print(f"Welcome {username}!")
 
+# String Indexing
+
+creditNumber = "1234-5678-9012-3456"
+
+print(creditNumber[0])
+print(creditNumber[3])
+print(creditNumber[0:4])
+print(creditNumber[:4])
+print(creditNumber[5:9])
+print(creditNumber[5:])
+print(creditNumber[-1])
+print(creditNumber[::2])
+
+# Exercise : Get last four digits of credit card number
+
+lastDigit = creditNumber[-4:]
+print(f"XXXX-XXXX-XXXX-{lastDigit}")
+
+# Exercise : Reverse the credit card number
+cardReverse = creditNumber[::-1]
+print(cardReverse)
+
+# Format Specifiers
+
+price1 = 3.14159
+price2 = -987.65
+price3 = 12.34
+price4 = 1234567890
+
+print(f"Price 1 is ${price1:.2f}")
+print(f"Price 2 is ${price3:.1f}")
+print(f"Price 3 is ${price3:.3f}")
+
+print(f"Price 1 is ${price1:10}")
+print(f"Price 2 is ${price3:10}")
+print(f"Price 3 is ${price3:10}")
+
+print(f"Price 1 is ${price1:010}")
+print(f"Price 2 is ${price3:010}")
+print(f"Price 3 is ${price3:010}")
+
+print(f"Price 1 is ${price1:<10}")
+print(f"Price 2 is ${price3:<10}")
+print(f"Price 3 is ${price3:<10}")
+
+print(f"Price 1 is ${price1:>10}")
+print(f"Price 2 is ${price3:>10}")
+print(f"Price 3 is ${price3:>10}")
+
+print(f"Price 1 is ${price1:^10}")
+print(f"Price 2 is ${price3:^10}")
+print(f"Price 3 is ${price3:^10}")
+
+print(f"Price 1 is ${price1:+}")
+print(f"Price 2 is ${price3:+}")
+print(f"Price 3 is ${price3: }")
+
+print(f"Price 4 is ${price4:,}")
+print(f"Price 4 is ${price4:+,.2f}")
