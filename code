@@ -546,3 +546,83 @@ while num < 0 or num > 10:
     num = int(input("Enter a number between 1 - 10 : "))
 
 print(f"Your number is {num}")
+
+# Compound Interest Calculator
+
+principle = 0
+rate = 0
+time = 0
+
+while principle <= 0:
+    principle = float(input("Enter the principal amount : "))
+    if principle <= 0:
+        print("Principal can't be less than or equal to zero")
+
+while rate <= 0:
+    rate = float(input("Enter the interest rate : "))
+    if rate <= 0:
+        print("Interest rate can't be less than or equal to zero")
+
+while time <=0:
+    time = int(input("Enter the time in years : "))
+    if time <= 0:
+        print("Time can't be less than or equal to zero")
+
+total = principle * pow((1 + rate/100), time)
+print(f"Balance after {time} year/s : ${total:.2f}")
+
+# Compound Interest Calculator - Another Version with 0 input
+
+principle = 0
+rate = 0
+time = 0
+
+while True:
+    principle = float(input("Enter the principal amount : "))
+    if principle < 0:
+        print("Principal can't be less than zero")
+    else:
+        break
+
+while True:
+    rate = float(input("Enter the interest rate : "))
+    if rate < 0:
+        print("Interest rate can't be less than zero")
+    else:
+        break
+
+while True:
+    time = int(input("Enter the time in years : "))
+    if time < 0:
+        print("Time can't be less than zero")
+    else:
+        break
+
+total = principle * pow((1 + rate/100), time)
+print(f"Balance after {time} year/s : ${total:.2f}")
+
+// For Loop
+
+for x in range (1, 11):
+    print(x)
+
+for x in reversed(range(1, 11)):
+    print(x)
+
+print("Happy New Year")
+
+for x in range(1, 11, 2):
+    print(x)
+
+creditNumber = "1234-5678-9012-3456"
+
+for x in creditNumber:
+    print(x)
+
+for x in range(1, 20):
+    if x == 13:
+        continue
+    elif x == 17:
+        break
+    else:
+        print(x)
