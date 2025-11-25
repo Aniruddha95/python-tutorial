@@ -689,3 +689,50 @@ for x in range(rows):
         print(symbol, end="")
     print()
 
+// Collection = single "variable" used to store multiple values
+
+# List  = [] ordered and changeable. Duplicates OK
+
+fruits = ["apple", "orange", "banana", "coconut"]
+
+print(fruits)
+print(fruits[1])
+print(fruits[:3])
+print(fruits[::2])
+print(fruits[::-1])
+
+for fruit in fruits:
+    print(fruit)
+
+print(len(fruits))
+print("apple" in fruits) # boolean
+
+fruits[0] = "pineapple"
+print(fruits)
+
+fruits.append("blueberry")
+print(fruits)
+
+fruits.remove("orange")
+print(fruits)
+
+fruits.insert(2, "orange")
+print(fruits)
+
+fruits.sort()
+print(fruits)
+
+fruits.reverse()
+print(fruits)
+
+print(fruits.index("orange"))
+
+fruits.append("banana")
+print(fruits.count("banana"))
+
+fruits.clear()
+print(fruits)
+
+# Set   = {} unordered and immutable, but Add/Remove is OK. No Duplicates
+
+
