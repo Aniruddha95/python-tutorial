@@ -821,4 +821,33 @@ for rows in keypad:
         print(num, end=" ")
     print()
 
+# Quiz Game
 
+questions = ("1. Which planet is known as the “Red Planet”?", "2. Who wrote the national anthem of India?", "3. What is the largest ocean on Earth?", "4. Who invented the telephone?", "5. Which country is known as the 'Land of the Rising Sun'?")
+options = (("Venus", "Mars", "Jupiter", "Mercury"),
+           ("Bankim Chandra Chatterjee", "Rabindranath Tagore", "Sarojini Naidu", "Subhas Chandra Bose"),
+           ("Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"),
+           ("Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Isaac Newton"),
+           ("China", "Japan", "Thailand", "South Korea"))
+
+answers = ("Mars", "Rabindranath Tagore", "Pacific Ocean", "Alexander Graham Bell", "Japan")
+
+score = 0
+questionNum = 0
+
+for question in questions:
+    print(question)
+    for option in options[questionNum]:
+        print(option)
+    guess = input("Enter your guess : ")
+
+    if guess == answers[questionNum]:
+        score += 1
+        print("Correct Answer")
+    else:
+        print("Wrong Answer")
+        print(f"{answers[questionNum]} is the correct answer")
+
+    questionNum += 1
+
+print(f"Your total score is : {score}")
